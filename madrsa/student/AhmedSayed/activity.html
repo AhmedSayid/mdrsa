@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assest/css/bootstrap.min.css">
+
+    <title>الانشطة</title>
+</head>
+<style>
+    .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgb(0, 0, 0);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 0.404), inset 0 .125em .5em rgb(0, 0, 0);
+    }
+
+    @media (max-width:393px) {
+        .all {
+            transform: translateX(-8px) !important;
+            width: 370px !important;
+        }
+    }
+
+    .all {
+        display: none;
+        justify-content: center;
+        margin-top: 120px;
+    }
+
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+    }
+
+    .rounded-4 {
+        border-radius: .5rem;
+    }
+
+    .rounded-5 {
+        border-radius: .75rem;
+    }
+
+    .rounded-6 {
+        border-radius: 1rem;
+    }
+
+    .modal-sheet .modal-dialog {
+        width: 380px;
+        transition: bottom .75s ease-in-out;
+    }
+
+    .modal-sheet .modal-footer {
+        padding-bottom: 2rem;
+    }
+
+    .modal-alert .modal-dialog {
+        width: 380px;
+    }
+
+    .border-right {
+        border-right: 1px solid rgba(0, 0, 0, 0.301);
+    }
+
+    .modal-tour .modal-dialog {
+        width: 380px;
+    }
+</style>
+
+<body>
+    <div id="alll">
+        <div style="display: flex;justify-content: center; margin-top: 20px;">
+            <img style="width: 350px;border-radius: 10px;" src="../../assest/img/kalthom.jpg" alt="">
+        </div>
+        <div style="display: flex;justify-content: center;margin-top: 50px;" id="actvityComp">
+            <div style="width: 180px;" class="btn btn-outline-primary">
+                <span>نشاط كمبيوتر</span>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;margin-top: 20px;" id="actvityArt">
+            <div class="btn btn-outline-pink">
+                <span>نشاط تربية فنية</span>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;margin-top: 20px;" id="actvitySosh">
+            <div style="width: 180px;" class="btn btn-outline-purple">
+                <span>نشاط اجتماعى</span>
+            </div>
+        </div>
+    </div>
+    <div id="show" class="all">
+        <div class="modal modal-alert position-static d-block  py-5" tabindex="-1" role="dialog" id="modalChoice">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-body p-4 text-center">
+                        <h5 class="mb-0">عايز تشترك ف نشاط الكمبيوتر؟؟</h5>
+                        <p class="mb-0">نشاط الكمبيوتر بيبقى عبارة عن مسابقات ومن المكافات بتاعتها التكريم او مكافاة
+                            مادية</p>
+                    </div>
+                    <div class="modal-footer flex-nowrap p-0">
+                        <button id="after" type="button"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>اه
+                                هشارك
+                            </strong></button>
+                        <button type="button" id="befor"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0"
+                            data-bs-dismiss="modal">لا خلاص </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----->
+    <!----->
+    <!----->
+    <!----->
+    <div id="shown" class="all">
+        <div class="modal modal-alert position-static d-block  py-5" tabindex="-1" role="dialog" id="modalChoice">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-body p-4 text-center">
+                        <h5 class="mb-0">عايز تشترك ف نشاط الرسم؟؟</h5>
+                        <p class="mb-0">نشاط الرسم بيبقى عبارة عن مسابقات ومن المكافات بتاعتها التكريم
+                        </p>
+                    </div>
+                    <div class="modal-footer flex-nowrap p-0">
+                        <button id="aftar" type="button"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>اه
+                                هشارك
+                            </strong></button>
+                        <button type="button" id="before"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0"
+                            data-bs-dismiss="modal">لا خلاص </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----->
+    <!----->
+    <!----->
+    <!----->
+    <div id="shwn" class="all">
+        <div class="modal modal-alert position-static d-block  py-5" tabindex="-1" role="dialog" id="modalChoice">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-body p-4 text-center">
+                        <h5 class="mb-0">عايز تشترك ف نشاط الاجتماعى</h5>
+                        <p class="mb-0">نشاط الاجتماعى بيبقى عبارة عن نشاط عادى
+                        </p>
+                    </div>
+                    <div class="modal-footer flex-nowrap p-0">
+                        <button id="aftr" type="button"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>اه
+                                هشارك
+                            </strong></button>
+                        <button type="button" id="bfre"
+                            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0"
+                            data-bs-dismiss="modal">لا خلاص </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="display: none;margin-top: 30px;margin-right: 0 !important;justify-content: center;" id="computer">
+            <div dir="rtl" style="display: flex; justify-content: center;">
+                <div style="border: solid #0000001e; width: 350px;height: 550px;box-shadow: outset 0 .5em 1.5em rgba(0, 0, 0, .1), outset 0 .125em .5em rgba(0, 0, 0, .15);
+
+        border-width: 3px 3px;" class="p-3 rounded-6">
+                    <h2 class="fw-bold mb-0 m-4">ايه الجديد :-</h2>
+                    <ul class="d-grid gap-4 my-5 list-unstyled">
+
+                        <div>
+                            <h5 class="mb-0 m-3">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 class="mb-0 m-4">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 style="margin-right: 20px;" class="mb-0"> مسابقة</h5>
+                            <span class="m-4">وصف المسابقة
+                            </span>
+                        </div>
+                    </ul>
+                    <span>للتفاصيل تواصل مع مس سارة</span>
+                    <div style="display: flex;justify-content: center;">
+                        <button id="back" type="button" class="btn btn-lg btn-primary mt-5 w-75"
+                            data-bs-dismiss="modal">
+                            شكرا</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----->
+        <!----->
+        <!----->
+        <!----->
+        <div style="display: none;margin-top: 30px;margin-right: 0 !important;justify-content: center;" id="art">
+            <div dir="rtl" style="display: flex; justify-content: center;">
+                <div style="border: solid #0000001e; width: 350px;height: 550px;box-shadow: outset 0 .5em 1.5em rgba(0, 0, 0, .1), outset 0 .125em .5em rgba(0, 0, 0, .15);
+
+        border-width: 3px 3px;" class="p-3 rounded-6">
+                    <h2 class="fw-bold mb-0 m-4">ايه الجديد :-</h2>
+                    <ul class="d-grid gap-4 my-5 list-unstyled">
+
+                        <div>
+                            <h5 class="mb-0 m-3">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 class="mb-0 m-4">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 style="margin-right: 20px;" class="mb-0"> مسابقة</h5>
+                            <span class="m-4">وصف المسابقة
+                            </span>
+                        </div>
+                    </ul>
+                    <span>للتفاصيل تواصل مع مس مروة</span>
+                    <div style="display: flex;justify-content: center;">
+                        <button id="backe" type="button" class="btn btn-lg btn-primary mt-5 w-75"
+                            data-bs-dismiss="modal">
+                            شكرا</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!----->
+        <!----->
+        <!----->
+        <!----->
+        <div style="display: none;margin-top: 30px;margin-right: 0 !important;justify-content: center;" id="sosh">
+            <div dir="rtl" style="display: flex; justify-content: center;">
+                <div style="border: solid #0000001e; width: 350px;height: 550px;box-shadow: outset 0 .5em 1.5em rgba(0, 0, 0, .1), outset 0 .125em .5em rgba(0, 0, 0, .15);
+
+        border-width: 3px 3px;" class="p-3 rounded-6">
+                    <h2 class="fw-bold mb-0 m-4">ايه الجديد :-</h2>
+                    <ul class="d-grid gap-4 my-5 list-unstyled">
+
+                        <div>
+                            <h5 class="mb-0 m-3">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 class="mb-0 m-4">مسابقة</h5>
+                            <span class="m-4">وصف المسابقة</span>
+                        </div>
+
+                        <div>
+                            <h5 style="margin-right: 20px;" class="mb-0"> مسابقة</h5>
+                            <span class="m-4">وصف المسابقة
+                            </span>
+                        </div>
+                    </ul>
+                    <span>للتفاصيل تواصل مع مدرسة المادة</span>
+                    <div style="display: flex;justify-content: center;">
+                        <button id="bke" type="button" class="btn btn-lg btn-primary mt-5 w-75"
+                            data-bs-dismiss="modal">
+                            شكرا</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    document.getElementById('actvityComp').onclick = () => {
+        var
+            wifty = document.getElementById("alll").style.display = "none";
+        document.getElementById("show").style.display = "flex";
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('after').onclick = () => {
+            var
+                wifty = document.getElementById("show").style.display = "none";
+            document.getElementById("computer").style.display = "flex";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('befor').onclick = () => {
+            var
+                wifty = document.getElementById("show").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('back').onclick = () => {
+            var
+                wifty = document.getElementById("computer").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+    }
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    document.getElementById('actvityArt').onclick = () => {
+        var
+            wifty = document.getElementById("alll").style.display = "none";
+        document.getElementById("shown").style.display = "flex";
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('aftar').onclick = () => {
+            var
+                wifty = document.getElementById("shown").style.display = "none";
+            document.getElementById("art").style.display = "flex";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('before').onclick = () => {
+            var
+                wifty = document.getElementById("shown").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('backe').onclick = () => {
+            var
+                wifty = document.getElementById("art").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+    }
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+    document.getElementById('actvitySosh').onclick = () => {
+        var
+            wifty = document.getElementById("alll").style.display = "none";
+        document.getElementById("shwn").style.display = "flex";
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('aftr').onclick = () => {
+            var
+                wifty = document.getElementById("shwn").style.display = "none";
+            document.getElementById("sosh").style.display = "flex";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('bfre').onclick = () => {
+            var
+                wifty = document.getElementById("shwn").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+        //##||##||##||##||##||##||##||##||##||##||##||##||##||//
+        document.getElementById('bke').onclick = () => {
+            var
+                wifty = document.getElementById("sosh").style.display = "none";
+            document.getElementById("alll").style.display = "block";
+        }
+    }
+</script>
+
+</html>

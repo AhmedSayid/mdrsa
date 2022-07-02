@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../assest/css/bootstrap.min.css">
+    <title>تسجيل</title>
+</head>
+
+<body>
+    <div style="height: 100vh;width: 100%;" class="all">
+        <div style="display: flex;justify-content: center;">
+            <img style="margin-top: 50px;border-radius: 15px;height: 250px;width: 300px;
+        " src="../assest/img/kalthom.jpg" alt="">
+        </div><br>
+        <BR>
+        <br>
+        <div class="mt-4" style="display: flex;justify-content: space-evenly;">
+            <div style="background-color: #ff4500; font-weight: 600; " class="btn font-monospace text-light"
+                style="transform: translateX(20px);" onclick="m()" id="k">معلم
+            </div>
+            <div style="background-color: #ff4500;" class="btn font-monospace text-light"
+                style="transform: translateX(-20px); font-weight: 600; " onclick="n()" id="l">
+                طالب</div>
+        </div>
+        <div style="display: flex;justify-content: center;" class="mt-5">
+            <div style="background-color: #ff4500; font-weight: 600; " class="btn font-monospace text-light"
+                onclick="j()" id="o">ولى
+                امر</div>
+
+        </div>
+    </div>
+</body>
+<style>
+    #k {
+        transform: scale(0);
+        transition: 0.2s;
+    }
+
+    #l {
+        transform: scale(0);
+        transition: 0.1s;
+    }
+
+    #o {
+        transform: scale(0);
+        transition: 0.2s;
+    }
+</style>
+<script>
+    function Rock(sec, id) { setTimeout(() => { document.getElementById(id).style.transform = "scale(1.1)"; setTimeout(() => { document.getElementById(id).style.transform = "scale(1)" }, 500); }, sec); }
+    Rock(1000, "k")
+    Rock(1400, "l")
+    Rock(1800, "o")
+    function n() {
+        location.href = "/login/log.html"
+    }
+
+    function m() {
+        location.href = "./login for teache.html"
+    }
+
+    function j() {
+        location.href = "./parent.html"
+    }    
+</script>
+
+</html>
