@@ -8,27 +8,52 @@
 </head>
 
 <body>
-    <div style="height: 100vh;width: 100%;" class="all">
-        <div style="display: flex;justify-content: center;">
-            <img style="margin-top: 50px;border-radius: 15px;height: 250px;width: 300px;
+    <div style="height: 100vh;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;" class="all">
+
+
+
+        
+        <div style="display: flex;justify-content: center;" class="pb-5">
+            <img style="border-radius: 15px;height: 250px;width: 300px;
         " src="../assest/img/kalthom.jpg" alt="">
-        </div><br>
-        <BR>
-        <br>
-        <div class="mt-4" style="display: flex;justify-content: space-evenly;">
+        </div>
+
+        <div class="row w-100">
+            <div class="col-md-6 d-flex justify-content-evenly">
+                <div style="background-color: #ff4500; font-weight: bold; " class="btn font-monospace text-light"
+                    style="transform: translateX(20px);" onclick="m()" id="k">معلم
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-evenly">
+                <div style="background-color: #ff4500;" class="btn font-monospace text-light"
+                    style="transform: translateX(-20px); font-weight: bold; " onclick="n()" id="l">
+                طالب
+                </div>
+            </div>
+
+            <div class="col-md-12 d-flex justify-content-center gx-0">
+                <div style="background-color: #ff4500; font-weight: bold; " class="btn font-monospace text-light mt-5"
+                    onclick="j()" id="o">ولى
+                    امر</div>
+    
+            </div> 
+            </div>
+        </div>
+        <!-- <div class="mt-4" style="display: flex;justify-content: space-evenly;">
             <div style="background-color: #ff4500; font-weight: 600; " class="btn font-monospace text-light"
                 style="transform: translateX(20px);" onclick="m()" id="k">معلم
             </div>
             <div style="background-color: #ff4500;" class="btn font-monospace text-light"
                 style="transform: translateX(-20px); font-weight: 600; " onclick="n()" id="l">
-                طالب</div>
+                طالب
+            </div>
         </div>
         <div style="display: flex;justify-content: center;" class="mt-5">
             <div style="background-color: #ff4500; font-weight: 600; " class="btn font-monospace text-light"
                 onclick="j()" id="o">ولى
                 امر</div>
 
-        </div>
+        </div> -->
     </div>
 </body>
 <style>
